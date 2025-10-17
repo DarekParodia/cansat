@@ -94,11 +94,12 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="core_8h_source.html">core/core.h</a>&quot;</code><br />
+<code>#include &lt;Arduino.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp__incl.svg" width="116" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp__incl.svg" width="214" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="main_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -128,21 +129,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00012">12</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>            {</div>
-<div class="line"><span class="lineno">   13</span>    <span class="comment">// put your main code here, to run repeatedly:</span></div>
-<div class="line"><span class="lineno">   14</span>    <span class="keywordtype">int</span> result = <a class="code hl_function" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a>(2, 3);</div>
-<div class="line"><span class="lineno">   15</span>    Serial.print(<span class="stringliteral">&quot;result: &quot;</span>);</div>
-<div class="line"><span class="lineno">   16</span>    Serial.print(result);</div>
-<div class="line"><span class="lineno">   17</span>    Serial.print(<span class="stringliteral">&quot; | milis: &quot;</span>);</div>
-<div class="line"><span class="lineno">   18</span>    Serial.println(millis());</div>
-<div class="line"><span class="lineno">   19</span>    delay(1000);</div>
-<div class="line"><span class="lineno">   20</span>}</div>
-<div class="ttc" id="amain_8cpp_html_a5203c7a910751e13eed0166bb509eae2"><div class="ttname"><a href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a></div><div class="ttdeci">int myFunction(int, int)</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00023">main.cpp:23</a></div></div>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00015">15</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>            {</div>
+<div class="line"><span class="lineno">   16</span>    <span class="comment">// put your main code here, to run repeatedly:</span></div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordtype">int</span> result = <a class="code hl_function" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a>(2, 3);</div>
+<div class="line"><span class="lineno">   18</span>    Serial.print(<span class="stringliteral">&quot;result: &quot;</span>);</div>
+<div class="line"><span class="lineno">   19</span>    Serial.print(result);</div>
+<div class="line"><span class="lineno">   20</span>    Serial.print(<span class="stringliteral">&quot; | milis: &quot;</span>);</div>
+<div class="line"><span class="lineno">   21</span>    Serial.println(millis());</div>
+<div class="line"><span class="lineno">   22</span>    delay(1000);</div>
+<div class="line"><span class="lineno">   23</span>    <a class="code hl_function" href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">core::loop</a>();</div>
+<div class="line"><span class="lineno">   24</span>}</div>
+<div class="ttc" id="amain_8cpp_html_a5203c7a910751e13eed0166bb509eae2"><div class="ttname"><a href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a></div><div class="ttdeci">int myFunction(int, int)</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00027">main.cpp:27</a></div></div>
+<div class="ttc" id="anamespacecore_html_ab5e17610dd056e709c7cf83377cdb2ea"><div class="ttname"><a href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">core::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">DO NOT USE!!</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00007">core.cpp:7</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph.svg" width="208" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph.svg" width="208" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -173,10 +176,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00023">23</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>                             {</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> x + y;</div>
-<div class="line"><span class="lineno">   25</span>}</div>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00027">27</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                             {</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> x + y;</div>
+<div class="line"><span class="lineno">   29</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -200,13 +203,20 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00006">6</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    6</span>             {</div>
-<div class="line"><span class="lineno">    7</span>    <span class="comment">// put your setup code here, to run once:</span></div>
-<div class="line"><span class="lineno">    8</span> </div>
-<div class="line"><span class="lineno">    9</span>    Serial.begin(115200);</div>
-<div class="line"><span class="lineno">   10</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00008">8</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>             {</div>
+<div class="line"><span class="lineno">    9</span>    <span class="comment">// put your setup code here, to run once:</span></div>
+<div class="line"><span class="lineno">   10</span> </div>
+<div class="line"><span class="lineno">   11</span>    Serial.begin(115200);</div>
+<div class="line"><span class="lineno">   12</span>    <a class="code hl_function" href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">core::init</a>();</div>
+<div class="line"><span class="lineno">   13</span>}</div>
+<div class="ttc" id="anamespacecore_html_a14366ed07e2196f77ec856d0cae4c465"><div class="ttname"><a href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">core::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">DO NOT USE!!</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00004">core.cpp:4</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph.svg" width="196" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->

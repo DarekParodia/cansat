@@ -97,40 +97,47 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResiza
   <div class="headertitle"><div class="title">main.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="core_8h.html">core/core.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// put function declarations here:</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keywordtype">int</span>  <a class="code hl_function" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">    6</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a>() {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">// put your setup code here, to run once:</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    Serial.begin(115200);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// put function declarations here:</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keywordtype">int</span>  <a class="code hl_function" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">    8</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a>() {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">// put your setup code here, to run once:</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Serial.begin(115200);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_function" href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">core::init</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">   12</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a>() {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">// put your main code here, to run repeatedly:</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">int</span> result = <a class="code hl_function" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a>(2, 3);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    Serial.print(<span class="stringliteral">&quot;result: &quot;</span>);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Serial.print(result);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    Serial.print(<span class="stringliteral">&quot; | milis: &quot;</span>);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Serial.println(millis());</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    delay(1000);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">   15</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a>() {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// put your main code here, to run repeatedly:</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> result = <a class="code hl_function" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a>(2, 3);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Serial.print(<span class="stringliteral">&quot;result: &quot;</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Serial.print(result);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Serial.print(<span class="stringliteral">&quot; | milis: &quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    Serial.println(millis());</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    delay(1000);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">core::loop</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// put function definitions here:</span></div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">   23</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> x + y;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// put function definitions here:</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">   27</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> x + y;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
-<div class="ttc" id="amain_8cpp_html_a4fc01d736fe50cf5b977f755b675f11d"><div class="ttname"><a href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a></div><div class="ttdeci">void setup()</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00006">main.cpp:6</a></div></div>
-<div class="ttc" id="amain_8cpp_html_a5203c7a910751e13eed0166bb509eae2"><div class="ttname"><a href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a></div><div class="ttdeci">int myFunction(int, int)</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00023">main.cpp:23</a></div></div>
-<div class="ttc" id="amain_8cpp_html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a></div><div class="ttdeci">void loop()</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00012">main.cpp:12</a></div></div>
+<div class="ttc" id="acore_8h_html"><div class="ttname"><a href="core_8h.html">core.h</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a4fc01d736fe50cf5b977f755b675f11d"><div class="ttname"><a href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a></div><div class="ttdeci">void setup()</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00008">main.cpp:8</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a5203c7a910751e13eed0166bb509eae2"><div class="ttname"><a href="main_8cpp.html#a5203c7a910751e13eed0166bb509eae2">myFunction</a></div><div class="ttdeci">int myFunction(int, int)</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00027">main.cpp:27</a></div></div>
+<div class="ttc" id="amain_8cpp_html_afe461d27b9c48d5921c00d521181f12f"><div class="ttname"><a href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a></div><div class="ttdeci">void loop()</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00015">main.cpp:15</a></div></div>
+<div class="ttc" id="anamespacecore_html_a14366ed07e2196f77ec856d0cae4c465"><div class="ttname"><a href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">core::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">DO NOT USE!!</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00004">core.cpp:4</a></div></div>
+<div class="ttc" id="anamespacecore_html_ab5e17610dd056e709c7cf83377cdb2ea"><div class="ttname"><a href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">core::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">DO NOT USE!!</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00007">core.cpp:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
