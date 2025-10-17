@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+contents: write   # REQUIRED for GitHub Pages deploy
+
+
 jobs:
   doxygen:
     runs-on: ubuntu-latest
