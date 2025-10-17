@@ -1,0 +1,47 @@
+#-------------------------------------------------------
+# Project Information
+#-------------------------------------------------------
+PROJECT_NAME           = "CanSat"
+PROJECT_NUMBER         = 0.1
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = English
+EXTRACT_ALL            = YES
+RECURSIVE              = YES
+
+#-------------------------------------------------------
+# Input / Output Settings
+#-------------------------------------------------------
+INPUT                  = src include lib
+FILE_PATTERNS          = *.cpp *.h
+EXCLUDE_PATTERNS       = */.pio/*
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = YES
+
+#-------------------------------------------------------
+# Source Browser
+#-------------------------------------------------------
+SOURCE_BROWSER          = YES
+INLINE_SOURCES          = YES
+STRIP_CODE_COMMENTS     = NO
+
+#-------------------------------------------------------
+# Diagrams / Graphs
+#-------------------------------------------------------
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+
+#-------------------------------------------------------
+# HTML Options
+#-------------------------------------------------------
+HTML_OUTPUT            = html
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
