@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 permissions:
-contents: write   # REQUIRED for GitHub Pages deploy
+  contents: write   # REQUIRED for GitHub Pages deploy
 
 
 jobs:
