@@ -28,4 +28,4 @@ jobs:
     needs: build
     steps:
     - name: Display structure of downloaded files
-      run: ls -R ~/
+      run: ls -R ~/runner/work/cansat
