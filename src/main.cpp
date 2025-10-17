@@ -1,3 +1,5 @@
+#include "core/core.h"
+
 #include <Arduino.h>
 
 // put function declarations here:
@@ -7,6 +9,7 @@ void setup() {
     // put your setup code here, to run once:
 
     Serial.begin(115200);
+    core::init();
 }
 
 void loop() {
@@ -17,6 +20,7 @@ void loop() {
     Serial.print(" | milis: ");
     Serial.println(millis());
     delay(1000);
+    core::loop();
 }
 
 // put function definitions here:
