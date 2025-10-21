@@ -99,23 +99,35 @@ $(document).ready(function(){initNavTree('core_8cpp_source.html',''); initResiza
 <div class="contents">
 <a href="core_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="core_8h.html">core.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="namespacecore.html">    3</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecore.html">core</a> {</div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">    4</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">init</a>() {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    }</div>
-</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="logger_8h.html">logger.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">    7</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">loop</a>() {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    }</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespacecore.html">    7</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecore.html">core</a> {</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">    8</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">init</a>() {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#if (USE_SERIAL)</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        Serial.begin(SERIAL_BAUD);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <a class="code hl_function" href="classLogger.html#a693a6a3d95f9b10ef27ef8e06c39fe94">Logger::debug</a>(<span class="stringliteral">&quot;Serial initialized&quot;</span>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
 </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>} <span class="comment">// namespace core</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">   15</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">loop</a>() {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_function" href="classLogger.html#a461308e8b24343b55b84a45a7a2223eb">Logger::info</a>(<span class="stringliteral">&quot;Loop, millis: %lu&quot;</span>, millis());</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>} <span class="comment">// namespace core</span></div>
+</div>
+<div class="ttc" id="aclassLogger_html_a461308e8b24343b55b84a45a7a2223eb"><div class="ttname"><a href="classLogger.html#a461308e8b24343b55b84a45a7a2223eb">Logger::info</a></div><div class="ttdeci">static void info(const char *fmt,...)</div><div class="ttdef"><b>Definition</b> <a href="logger_8cpp_source.html#l00064">logger.cpp:64</a></div></div>
+<div class="ttc" id="aclassLogger_html_a693a6a3d95f9b10ef27ef8e06c39fe94"><div class="ttname"><a href="classLogger.html#a693a6a3d95f9b10ef27ef8e06c39fe94">Logger::debug</a></div><div class="ttdeci">static void debug(const char *fmt,...)</div><div class="ttdef"><b>Definition</b> <a href="logger_8cpp_source.html#l00065">logger.cpp:65</a></div></div>
 <div class="ttc" id="acore_8h_html"><div class="ttname"><a href="core_8h.html">core.h</a></div></div>
-<div class="ttc" id="anamespacecore_html"><div class="ttname"><a href="namespacecore.html">core</a></div><div class="ttdoc">System functions.</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00003">core.cpp:3</a></div></div>
-<div class="ttc" id="anamespacecore_html_a14366ed07e2196f77ec856d0cae4c465"><div class="ttname"><a href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">core::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">DO NOT USE!!</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00004">core.cpp:4</a></div></div>
-<div class="ttc" id="anamespacecore_html_ab5e17610dd056e709c7cf83377cdb2ea"><div class="ttname"><a href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">core::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">DO NOT USE!!</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00007">core.cpp:7</a></div></div>
+<div class="ttc" id="alogger_8h_html"><div class="ttname"><a href="logger_8h.html">logger.h</a></div></div>
+<div class="ttc" id="anamespacecore_html"><div class="ttname"><a href="namespacecore.html">core</a></div><div class="ttdoc">System functions.</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00007">core.cpp:7</a></div></div>
+<div class="ttc" id="anamespacecore_html_a14366ed07e2196f77ec856d0cae4c465"><div class="ttname"><a href="namespacecore.html#a14366ed07e2196f77ec856d0cae4c465">core::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">DO NOT USE!!</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00008">core.cpp:8</a></div></div>
+<div class="ttc" id="anamespacecore_html_ab5e17610dd056e709c7cf83377cdb2ea"><div class="ttname"><a href="namespacecore.html#ab5e17610dd056e709c7cf83377cdb2ea">core::loop</a></div><div class="ttdeci">void loop()</div><div class="ttdoc">DO NOT USE!!</div><div class="ttdef"><b>Definition</b> <a href="core_8cpp_source.html#l00015">core.cpp:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

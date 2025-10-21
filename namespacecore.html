@@ -129,10 +129,20 @@ Functions</h2></td></tr>
 <p>DO NOT USE!! </p>
 <p>This function is run only by <a class="el" href="main_8cpp.html">main.cpp</a>, it should be avoided anywhere else it contains initialization code </p>
 
-<p class="definition">Definition at line <a class="el" href="core_8cpp_source.html#l00004">4</a> of file <a class="el" href="core_8cpp_source.html">core.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    4</span>                {</div>
-<div class="line"><span class="lineno">    5</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="core_8cpp_source.html#l00008">8</a> of file <a class="el" href="core_8cpp_source.html">core.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>                {</div>
+<div class="line"><span class="lineno">    9</span><span class="preprocessor">#if (USE_SERIAL)</span></div>
+<div class="line"><span class="lineno">   10</span>        Serial.begin(SERIAL_BAUD);</div>
+<div class="line"><span class="lineno">   11</span>        <a class="code hl_function" href="classLogger.html#a693a6a3d95f9b10ef27ef8e06c39fe94">Logger::debug</a>(<span class="stringliteral">&quot;Serial initialized&quot;</span>);</div>
+<div class="line"><span class="lineno">   12</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   13</span>    }</div>
+<div class="ttc" id="aclassLogger_html_a693a6a3d95f9b10ef27ef8e06c39fe94"><div class="ttname"><a href="classLogger.html#a693a6a3d95f9b10ef27ef8e06c39fe94">Logger::debug</a></div><div class="ttdeci">static void debug(const char *fmt,...)</div><div class="ttdef"><b>Definition</b> <a href="logger_8cpp_source.html#l00065">logger.cpp:65</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecore_a14366ed07e2196f77ec856d0cae4c465_cgraph.svg" width="252" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespacecore_a14366ed07e2196f77ec856d0cae4c465_icgraph.svg" width="196" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -158,10 +168,17 @@ Here is the caller graph for this function:</div>
 <p>DO NOT USE!! </p>
 <p>This function is run only by <a class="el" href="main_8cpp.html">main.cpp</a>, it should be avoided anywhere else it contains loop code </p>
 
-<p class="definition">Definition at line <a class="el" href="core_8cpp_source.html#l00007">7</a> of file <a class="el" href="core_8cpp_source.html">core.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    7</span>                {</div>
-<div class="line"><span class="lineno">    8</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="core_8cpp_source.html#l00015">15</a> of file <a class="el" href="core_8cpp_source.html">core.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>                {</div>
+<div class="line"><span class="lineno">   16</span>        <a class="code hl_function" href="classLogger.html#a461308e8b24343b55b84a45a7a2223eb">Logger::info</a>(<span class="stringliteral">&quot;Loop, millis: %lu&quot;</span>, millis());</div>
+<div class="line"><span class="lineno">   17</span>    }</div>
+<div class="ttc" id="aclassLogger_html_a461308e8b24343b55b84a45a7a2223eb"><div class="ttname"><a href="classLogger.html#a461308e8b24343b55b84a45a7a2223eb">Logger::info</a></div><div class="ttdeci">static void info(const char *fmt,...)</div><div class="ttdef"><b>Definition</b> <a href="logger_8cpp_source.html#l00064">logger.cpp:64</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacecore_ab5e17610dd056e709c7cf83377cdb2ea_cgraph.svg" width="244" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespacecore_ab5e17610dd056e709c7cf83377cdb2ea_icgraph.svg" width="196" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
